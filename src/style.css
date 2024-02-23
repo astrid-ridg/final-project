@@ -26,18 +26,19 @@ body {
   color: #a2a8d3;
 }
 .card-title-main {
+  font-weight: bold;
   font-size: 30px;
-  color: #a2a8d3;
+  color: #38598b;
 }
 
 .card-text-main {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #a2a8d3;
+  color: #38598b;
 }
 
 .card-text {
-  color: #a2a8d3;
+  color: #5e63b6;
 }
 
 .weather-icon {
