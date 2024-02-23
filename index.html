@@ -6,13 +6,116 @@
     <title>astrid-weather-app</title>
   </head>
   <body>
-    <h1>Placeholder</h1>
-    <footer>
-      Coded by
-      <a href="https://github.com/astrid-ridg">Astrid Ridgway</a>, code hosted
-      on <a href="https://github.com/astrid-ridg/final-project">GitHub</a> and
-      website hosted on
-      <a href="https://astrid-weather-app.netlify.app/">Netlify</a>
-    </footer>
+    <div class="container">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control search-box"
+                placeholder="Search city here"
+                id="search-city"
+              />
+              <input
+                class="btn btn-light search-button"
+                type="submit"
+                value="🔍"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card main-card">
+            <div class="card-body">
+              <h5 class="card-title-main">City</h5>
+              <p class="card-text-main">15°C</p>
+              <h6 class="card-text">Thur Nov 30, 00:00, 2023</h6>
+              <i class="fa-solid fa-cloud-sun weather-icon"></i>
+              <p class="main-card-blurb">
+                <strong> Partly cloudy</strong> <br />
+                Precipitation: 30% <br />
+                Wind: 20km/h <br />
+                Humidity: 70%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row forecast-line">
+        <div class="col-3 forecast-line-today">Today</div>
+        <div class="col-3 forecast-line-5">5-day forecast</div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <p class="card-text">Cloudy with rain</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-rain forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <p class="card-text">Partly cloudy</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-sun forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <p class="card-text">Cloudy with rain</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-rain forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <p class="card-text">Partly cloudy</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-sun forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Saturday</h5>
+              <p class="card-text">Cloudy with rain</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-rain forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="quick-search">
+        Quick search:
+        <strong
+          >London | New York | Lisbon | Milan | Hong Kong | Paris |
+          Seoul</strong
+        >
+      </span>
+      <footer>
+        Coded by
+        <a href="https://github.com/astrid-ridg">Astrid Ridgway</a>, code hosted
+        on <a href="https://github.com/astrid-ridg/final-project">GitHub</a> and
+        website hosted on
+        <a href="https://astrid-weather-app.netlify.app/">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
