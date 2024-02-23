@@ -1,0 +1,72 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #ff1e78;
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-box {
+  border-color: #ff1e78;
+}
+
+.search-button {
+  position: relative;
+  left: 220px;
+  top: -38px;
+}
+
+.card-body {
+  color: #ff1e78;
+}
+.card-title-main {
+  font-size: 30px;
+}
+
+.card-text-main {
+  font-size: 30px;
+  margin: 0;
+}
+
+.weather-icon {
+  color: #ff1e78;
+  font-size: 125px;
+  position: relative;
+  left: 225px;
+  top: -55px;
+}
+
+.main-card-blurb {
+  position: relative;
+  left: 490px;
+  top: -155px;
+}
+
+.main-card {
+  height: 220px;
+  border-color: #ff1e78;
+}
+
+.card {
+  margin: 10px;
+  border-color: #ff1e78;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+.forecast-line {
+  color: #ff1e78;
+}
+
+.forecast-line-5 {
+  text-decoration: underline;
+}
+
+.quick-search {
+  color: #ff1e78;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
