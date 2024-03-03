@@ -4,7 +4,7 @@ body {
 
 .container {
   background-color: white;
-  max-width: 800px;
+  max-width: 700px;
   margin: 30px auto;
   border: 2px solid #a2a8d3;
   border-radius: 16px;
@@ -19,7 +19,7 @@ body {
 
 .search-button {
   position: relative;
-  left: 220px;
+  left: 190px;
   top: -38px;
 }
 
@@ -29,30 +29,31 @@ body {
 .card-title-main {
   font-weight: bold;
   font-size: 30px;
-  color: #38598b;
+  color: #a2a8d3;
 }
 
 .card-text-main {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #38598b;
+  color: #a2a8d3;
 }
 
 .card-text {
-  color: #5e63b6;
+  color: #a2a8d3;
 }
 
 .weather-icon {
   color: #dbdbeb;
-  font-size: 120px;
+  width: 100px;
+  height: 100px;
   position: relative;
-  left: 250px;
-  top: -75px;
+  left: 300px;
+  top: -90px;
 }
 
 .main-card-blurb {
   position: relative;
-  left: 490px;
+  left: 420px;
   top: -180px;
 }
 
