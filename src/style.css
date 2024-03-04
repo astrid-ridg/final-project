@@ -38,10 +38,6 @@ body {
   color: #a2a8d3;
 }
 
-.card-text {
-  color: #a2a8d3;
-}
-
 .weather-icon {
   color: #dbdbeb;
   width: 100px;
@@ -67,10 +63,6 @@ body {
   border-color: #a2a8d3;
 }
 
-.card-title {
-  font-size: 15px;
-}
-
 footer {
   color: rgba(0, 0, 0, 0.6);
   border-top: 1px solid #d5def5;
@@ -81,4 +73,25 @@ footer {
 
 a {
   color: #ff1e78;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-date {
+  font-size: 18px;
+  color: #a2a8d3;
+}
+
+.forecast-temperatures {
+  font-size: 16px;
+  color: #a2a8d3;
+}
+
+.forecast-icon {
+  padding: 10px;
 }
