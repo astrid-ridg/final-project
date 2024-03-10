@@ -90,6 +90,14 @@ a {
 .forecast-temperatures {
   font-size: 15px;
   color: #a2a8d3;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-max-temperature {
+  padding: 0 7px;
 }
 
 .forecast-icon {
