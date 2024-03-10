@@ -79,19 +79,21 @@ a {
   margin-top: 20px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .forecast-date {
-  font-size: 18px;
+  font-size: 17px;
   color: #a2a8d3;
 }
 
 .forecast-temperatures {
-  font-size: 16px;
+  font-size: 15px;
   color: #a2a8d3;
 }
 
 .forecast-icon {
-  padding: 10px;
+  text-align: center;
+  width: 60px;
+  padding: 5px;
 }
