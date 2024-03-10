@@ -55,29 +55,40 @@ function searchCity(event) {
   fetchWeather(searchInput.value);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
+
 function getForecast(city) {
   let apiKey = "fad3604f59545d05634atobc1ad582a8";
   let units = "metric";
-  let apiUrl = `https://api.shecodes.io/weather/v1/foreacast?query=${city}&key=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function displayForecast(response) {
-  let forecastDays = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
-  forecastDays.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `
-<div class="forecast-day">
-  <div class="forecast-date">${day}</div>
-  <div class="forecast-icon">🌥️</div>
-  <div class="forecast-temperatures">
-      <span class="forecast-max-temperature"><strong>15°</strong></span>
-      <span class="forecast-min-temperature">9°</span>
+  response.data.daily.forEach(function (day, index) {
+    if (index > 0 && index < 6) {
+      forecastHtml =
+        forecastHtml +
+        `
+    <div class="forecast-day">
+     <div class="forecast-date">${formatDay(day.time)}</div>
+     <div><img src="${day.condition.icon_url}" class="forecast-icon" /></div>
+     <div class="forecast-temperatures">
+      <span class="forecast-max-temperature"><strong>${Math.round(
+        day.temperature.maximum
+      )}°</strong></span>
+      <span class="forecast-min-temperature">${Math.round(
+        day.temperature.minimum
+      )}°</span>
       </div>
      </div>`;
+    }
   });
   let forecast = document.querySelector("#forecast");
   forecast.innerHTML = forecastHtml;
@@ -87,4 +98,3 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
 
 fetchWeather("Cape Town");
-displayForecast();
